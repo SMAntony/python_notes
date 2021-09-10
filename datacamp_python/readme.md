@@ -1,5 +1,7 @@
 # Python Creator:
 >Guido van Rossum
 ***
-# Ipython Creator:
+# IPython Creator:
 >Fernando Pérez
+***
+*It is part of boarder jupyter system
