@@ -4,4 +4,7 @@
 # IPython Creator:
 >Fernando Pérez
 ***
-* It is part of boarder jupyter system
+* Ipython is part of boarder jupyter system
+
+# Python Scripts
+* Explicitly mention print
