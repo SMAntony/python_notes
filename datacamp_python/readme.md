@@ -29,7 +29,7 @@ complex()
 > This is something that I dont understand fully
 * Funtions that belong to objects\
 * Each object has specific methods associated
-* <b>Some methods can change the objects they are called on<b\>
+* **Some methods can change the objects they are called on**
 Ex: 
 * Str --> capitalize() or replace()
 > capitalize --> Returns string where the first letter is capitalized
