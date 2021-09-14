@@ -26,6 +26,7 @@ complex()
 # Methods
 > This is something that I dont understand fully
 * Funtions that belong to objects
-* Ex: Str --> capitalize() or replace()
-      float --> bit_length() or conjugate()
-      list --> index() or count()
+Ex: 
+* Str --> capitalize() or replace()
+* float --> bit_length() or conjugate()
+* list --> index() or count()
