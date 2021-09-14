@@ -27,14 +27,15 @@ complex()
 
 # Methods
 > This is something that I dont understand fully
-* Funtions that belong to objects\
+* Funtions that belong to objects
 * Each object has specific methods associated
-* **Some methods can change the objects they are called on**
+* **Some methods can change the objects they are called on**\
 Ex: 
 * Str --> capitalize() or replace()
 > capitalize --> Returns string where the first letter is capitalized
 > replace --> replace some parts of the string
 * float --> bit_length() or conjugate()
-* list --> index() or count()
+* list --> index() or count() or append() or remove() or reverse
 > index --> gives you the index of element in a list
 > count --> gives you the number of times element is repeated
+> append --> extends list, essentially changing them
