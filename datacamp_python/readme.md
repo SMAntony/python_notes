@@ -30,3 +30,5 @@ Ex:
 * Str --> capitalize() or replace()
 * float --> bit_length() or conjugate()
 * list --> index() or count()
+> index --> gives you the index of element in a list
+> count --> gives you the number of times element is repeated
