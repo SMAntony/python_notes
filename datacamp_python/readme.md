@@ -15,6 +15,8 @@
 
 # Objects:
 Examples: Str, List, Int and so on
+Everything == Object
+
 # Functions:
 predefined functions and user-defined functions
 help()
@@ -26,8 +28,12 @@ complex()
 # Methods
 > This is something that I dont understand fully
 * Funtions that belong to objects\
+* Each object has specific methods associated
+* <b>Some methods can change the objects they are called on<\b>
 Ex: 
 * Str --> capitalize() or replace()
+> capitalize --> Returns string where the first letter is capitalized
+> replace --> replace some parts of the string
 * float --> bit_length() or conjugate()
 * list --> index() or count()
 > index --> gives you the index of element in a list
