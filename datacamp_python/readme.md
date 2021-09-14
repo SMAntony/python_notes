@@ -15,3 +15,9 @@
 
 # Functions:
 predefined functions and user-defined functions
+help()
+complex()
+
+# Simple yet effective codes:
++ --> to concate
+# Methods
