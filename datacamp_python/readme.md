@@ -9,10 +9,6 @@
 # Python Scripts
 * Explicitly mention print and other functions
 
-# Python as a calculator
-* Exponentiation: **. This operator raises the number to its left to the power of the number to its right. For example 4**2 will give 16.
-* Modulo: %. This operator returns the remainder of the division of the number to the left by the number on its right. For example 18 % 7 equals 4
-
 # Objects:
 Examples: Str, List, Int and so on
 Everything == Object
@@ -21,9 +17,6 @@ Everything == Object
 predefined functions and user-defined functions
 help()
 complex()
-
-# Simple yet effective codes:
-\+ --> to concate
 
 # Methods
 > This is something that I dont understand fully
@@ -53,7 +46,7 @@ Ex:
 * pip -> prefered installer program
 * download get.pip.py
 * Terminal: python3 get-pip.py
-# Using numpy
+# Using numpy package
 ``` 
 import numpy
 numpy.array([1,2,12])
@@ -71,11 +64,24 @@ array([1,2,12])
 ```
 > Limit using functions from package in this manner as it is hard for someone else to understand especially when the code is very long
 
+# Math package
+* radians
+* pi
+
+# List Recap
+* Powerful
+* Collection of values
+* Hold different values
+* Change, Add and Remove
+* **Still very slow and doesnt have functions, Solution: Use Numpy array**
+
+# Simple yet effective codes:
+\+ --> to concate
+
 # Some Basic Geometry u.u
 * Circumference = 2πr
 * Area = πr^2
 * Calculate the distance travelled by the Moon over 12 degrees of its orbit: r * phi (phi -> angle in radians)
-# Math package
-* radians
-* pi
+
+
 
