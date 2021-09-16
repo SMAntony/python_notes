@@ -58,9 +58,14 @@ Ex:
 import numpy
 numpy.array([1,2,12])
 ```
->This can be tiresome, so use
+> This can be tiresome, so use:
 ```
 import numpy as np
 np.array([1,2,12])
 ```
-
+> To use one specific function from a python:
+```
+from numpy import array
+# You can simply use array now instead of np.array()
+array([1,2,12])
+```
