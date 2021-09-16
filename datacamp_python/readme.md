@@ -73,7 +73,7 @@ array([1,2,12])
 * Collection of values
 * Hold different values
 * Change, Add and Remove
-* **Still very slow and doesnt have functions, Solution: Use Numpy array**
+* **Still very slow and doesnt have list functions, Solution: Use Numpy array**
 
 # Simple yet effective codes:
 \+ --> to concate
