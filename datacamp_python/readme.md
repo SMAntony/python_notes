@@ -72,4 +72,4 @@ array([1,2,12])
 > Limit using functions from package in this manner as it is hard for someone else to understand especially when the code is very long
 # Some Basic Geometry u.u
 * Circumference = 2πr
-* Area = πr^2
+* Area = $n^2$
