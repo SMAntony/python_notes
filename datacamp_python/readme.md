@@ -53,3 +53,14 @@ Ex:
 * pip -> prefered installer program
 * download get.pip.py
 * Terminal: python3 get-pip.py
+# Using numpy
+``` 
+import numpy
+numpy.array([1,2,12])
+```
+>This can be tiresome, so use
+```
+import numpy as np
+np.array([1,2,12])
+```
+
