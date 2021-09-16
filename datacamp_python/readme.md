@@ -75,13 +75,30 @@ array([1,2,12])
 * Change, Add and Remove
 * **Still very slow and doesnt have list functions, Solution: Use Numpy array**
 
+# Numpy solution to list
+* Perform operations in numpy.array() as if single values
+# Numpy remarks
+* Assumes that np.array() contain values of **same type**
+* np.array() is a **DATATYPE** and comes with its own methods
+# Numpy Subsetting
+```
+a = np.array({1,2,3])
+a[1]
+# 2
+a > 1
+# array([False, True, True], dtype=bool)
+a[a > 1]
+# array([2,3])
+```
 # Simple yet effective codes:
 \+ --> to concate
 
-# Some Basic Geometry u.u
+# Some Basic Miscellaneous stuff u.u
 * Circumference = 2πr
 * Area = πr^2
 * Calculate the distance travelled by the Moon over 12 degrees of its orbit: r * phi (phi -> angle in radians)
+* height_in_meters = heigh_in_inch * 0.0254
+* weight_in_kg = weight_in_lb * 0.453592
 
 
 
