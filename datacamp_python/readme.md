@@ -39,3 +39,17 @@ Ex:
 > index --> gives you the index of element in a list
 > count --> gives you the number of times element is repeated
 > append --> extends list, essentially changing them
+
+# Packages
+* Directory of python scripts
+* Each script = module
+* Modules specify functions, methods, types etc
+# Ex:
+* Numpy -> to effectively work with arrays
+* Matplotlib -> Data Visulization
+* scikit-learn -> for ML
+# Installing packages
+**Use pip to install python packages**
+* pip -> prefered installer program
+* download get.pip.py
+* Terminal: python3 get-pip.py
