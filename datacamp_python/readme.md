@@ -66,7 +66,7 @@ np.array([1,2,12])
 > To use one specific function from a package:
 ```
 from numpy import array
-# You can simply use array now instead of np.array()
+# You can simply use "array()" now, instead of "np.array()"
 array([1,2,12])
 ```
 > Limit using functions from package in this manner as it is hard for someone else to understand especially when the code is very long
