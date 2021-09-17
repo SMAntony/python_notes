@@ -93,6 +93,61 @@ a > 1
 a[a > 1]
 # array([2,3])
 ```
+# Numpy 2D subsetting
+```
+b = np.array([2, 7, 29])
+np_2d = np.array(a,b)
+np_2d[0][2]
+# 3
+np_2d[0,2]
+# 3
+np_2d[:,1:3]
+np_2d[:,1]
+np_2d[1,:]
+n_2d.shape
+```
+# Numpy Basic Statistics
+```
+np.mean()
+np.median()
+np.corrcoeff(list, list) #to check if lists are correlated
+np.std()
+np.sum()
+np.sort()
+```
+# Generate Data using Numpy
+* Arguements for np.random.normal()
+    * distribution Mean
+    * distribution standard deviation
+    * number of samples
+```
+height = np.round(np.random.normal(1.75, 0.20, 5000), 2)
+
+weight = np.round(np.random.normal(60.32, 15, 5000), 2)
+
+np_city = np.column_stack((height, weight))
+```
+
+# Sample beginner code, to be deleted after I am good at numpy
+```
+# baseball is available as a regular list of lists
+# updated is available as 2D numpy array
+
+# Import numpy package
+import numpy as np
+
+# Create np_baseball (3 cols)
+np_baseball = np.array(baseball)
+
+# Print out addition of np_baseball and updated
+print(np_baseball + updated)
+
+# Create numpy array: conversion
+conversion = np.array([0.0254, 0.453592, 1])
+
+# Print out product of np_baseball and conversion
+print(np_baseball * conversion)
+```
 # Numpy sideffects
 * numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as **type coercion**
 
