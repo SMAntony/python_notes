@@ -148,6 +148,34 @@ conversion = np.array([0.0254, 0.453592, 1])
 # Print out product of np_baseball and conversion
 print(np_baseball * conversion)
 ```
+# 2
+```
+# heights and positions are available as lists
+
+# Import numpy
+import numpy as np
+
+# Convert positions and heights to numpy arrays: np_positions, np_heights
+np_positions = np.array(positions)
+np_heights = np.array(heights)
+
+
+# Heights of the goalkeepers: gk_heights
+gk_heights = np.array(np_heights[np_positions == "GK"])
+
+
+# Heights of the other players: other_heights
+other_heights = np.array(np_heights[np_positions != "GK"])
+
+# Print out the median height of goalkeepers. Replace 'None'
+med1 = np.median(gk_heights)
+print("Median height of goalkeepers: " + str(med1))
+
+# Print out the median height of other players. Replace 'None'
+med2 = np.median(other_heights)
+print("Median height of other players: " + str(med2))
+```
+
 # Numpy sideffects
 * numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as **type coercion**
 
