@@ -6,6 +6,8 @@
 ***
 * Ipython is part of boarder jupyter system
 
+# PYTHON USES ZERO INDEXING
+
 # Python Scripts
 * Explicitly mention print and other functions
 
@@ -80,6 +82,7 @@ array([1,2,12])
 # Numpy remarks
 * Assumes that np.array() contain values of **same type**
 * np.array() is a **DATATYPE** and comes with its own methods
+* Excels at vector arithmetic
 # Numpy Subsetting
 ```
 a = np.array({1,2,3])
@@ -90,6 +93,10 @@ a > 1
 a[a > 1]
 # array([2,3])
 ```
+# Numpy sideffects
+* numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as **type coercion**
+
+
 # Simple yet effective codes:
 \+ --> to concate
 
