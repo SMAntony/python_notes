@@ -15,3 +15,27 @@ plt.show() #python is lazy so this method is required to show the plotting
 # scatter plot
 ```
 plt.scatter(year, plot) #just change this for scatter plotting
+```
+# Using logrithmic scale
+```
+plt.xscale('log')
+```
+# Histogram
+* Helpful to explore our data
+* Get idea of distribution of variables
+```
+import matplotlib.pyplot as plt
+values = [0,0.6,1.4,1.6,2.2,2.5,2.6,3.2,3.5,3.9,4.2,6]
+plt.hist(values, bins=3)
+plt.show()
+```
+# Cleaning the plt
+```
+plt.clf() #like plt.show() but works in the opposite way
+```
+# Customizing plots
+* Ticks: plt.xticks([],[])
+* Color: plt.scatter(c = 'color' )
+* Sizes: plt.scatter(s = 'size')
+* Texts: plt.text(1550, 71, 'India')
+* Grids: plt.grid(True)
