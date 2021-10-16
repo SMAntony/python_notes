@@ -62,3 +62,11 @@ for i in range(0, t):
 n = int(input().strip())
 
 arr = list(map(int, input().rstrip().split()))
+
+#reading unknown number of inputs
+while True:
+    try:
+        value = input()
+        do_stuff(value)
+    except (EOFError):
+        break
