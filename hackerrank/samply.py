@@ -25,38 +25,55 @@ for i in range(0, t):
         p.yearPasses()       
     p.amIOld()
     print("")
-    
-    #valid email filter code
-        def fun(email):
+
+#Dictonaries and maps    
+def findDirectory(name, key_values):
+    if name in key_values:
+        print(name,"=",key_values.get(name),sep = "") 
+    else:
+        print("Not found")
+
+if __name__ == "__main__":
+    n = int(input())
+    keys_values = dict([map(str, input().strip().split()) for _ in range(n)])
+    while True:
         try:
-            username, url = email.split('@')
-            website, extension = url.split('.')
-        except ValueError:
-            return False
+            name = input()
+            findDirectory(name,keys_values)
+        except (EOFError):
+            break
+            
+#valid email filter code
+    def fun(email):
+    try:
+        username, url = email.split('@')
+        website, extension = url.split('.')
+    except ValueError:
+        return False
 
-        if username.replace('-', '').replace('_', '').isalnum() is False:
-            return False
-        elif website.isalnum() is False:
-            return False
-        elif len(extension) > 3:
-            return False
-        else:
-            return True
+    if username.replace('-', '').replace('_', '').isalnum() is False:
+        return False
+    elif website.isalnum() is False:
+        return False
+    elif len(extension) > 3:
+        return False
+    else:
+        return True
 
 
 
-    def filter_mail(emails):
-        return list(filter(fun, emails))
+def filter_mail(emails):
+    return list(filter(fun, emails))
 
-    if __name__ == '__main__':
-        n = int(input())
-        emails = []
-        for _ in range(n):
-            emails.append(input())
+if __name__ == '__main__':
+    n = int(input())
+    emails = []
+    for _ in range(n):
+        emails.append(input())
 
-    filtered_emails = filter_mail(emails)
-    filtered_emails.sort()
-    print(filtered_emails)
+filtered_emails = filter_mail(emails)
+filtered_emails.sort()
+print(filtered_emails)
 
 #some input asking codes
 n = int(input().strip())
