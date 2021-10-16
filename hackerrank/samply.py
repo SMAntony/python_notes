@@ -58,3 +58,7 @@ for i in range(0, t):
     filtered_emails.sort()
     print(filtered_emails)
 
+#some input asking codes
+n = int(input().strip())
+
+arr = list(map(int, input().rstrip().split()))
