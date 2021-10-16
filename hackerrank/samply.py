@@ -81,9 +81,40 @@ n = int(input().strip())
 arr = list(map(int, input().rstrip().split()))
 
 #reading unknown number of inputs
+1.throw an exception:
+    
 while True:
-    try:
-        value = input()
-        do_stuff(value)
-    except (EOFError):
-        break
+  try:
+    value = raw_input()
+    do_stuff(value) # next line was found 
+  except (EOFError):
+    break #end of file reached
+
+2.check input content:
+
+while True:
+  value = raw_input()
+  if (value != ""):
+    do_stuff(value) # next line was found 
+  else:
+    break 
+
+3. use sys.stdin.readlines() to convert them into a list, and then use a for-each loop. More detailed explanation is Why does standard input() cause an EOF error
+
+import sys 
+
+# Read input and assemble Phone Book
+n = int(input())
+phoneBook = {}
+for i in range(n):
+    contact = input().split(' ')
+    phoneBook[contact[0]] = contact[1]
+
+# Process Queries
+lines = sys.stdin.readlines()  # convert lines to list
+for i in lines:
+    name = i.strip()
+    if name in phoneBook:
+        print(name + '=' + str( phoneBook[name] ))
+    else:
+        print('Not found')
