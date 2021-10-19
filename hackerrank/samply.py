@@ -118,3 +118,9 @@ for i in lines:
         print(name + '=' + str( phoneBook[name] ))
     else:
         print('Not found')
+
+#interesting      
+ arr = []
+
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
