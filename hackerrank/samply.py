@@ -42,7 +42,37 @@ if __name__ == "__main__":
             findDirectory(name,keys_values)
         except (EOFError):
             break
-            
+
+#2D arrays
+def SumOfDiag(mat3):
+    n = len(mat3)
+    sum_ = 0
+    for i in range(n):
+        sum_ += sum(mat3[i])
+    sum_ = sum_ - (mat3[1][0]) - (mat3[1][2])
+    return sum_
+    
+def FindMax(arr):
+    s = {}
+    count = 0
+    for x in range (0,4):
+        for y in range (0,4):
+            temp_matrix= arr[x][y:y+3],arr[x+1][y:y+3],arr[x+2][y:y+3]
+            sum_ = SumOfDiag(temp_matrix)
+            s[count] = sum_
+            count += 1
+    return(s)
+    
+if __name__ == '__main__':
+
+    arr = []
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
+    
+    data = FindMax(arr)
+    data = list(data.values())
+    print(max(data))
+
 #valid email filter code
     def fun(email):
     try:
@@ -118,8 +148,8 @@ for i in lines:
         print(name + '=' + str( phoneBook[name] ))
     else:
         print('Not found')
-
-#interesting      
+        
+#to get matrix of n rows n cols as input and turning it into 2D array     
  arr = []
 
     for _ in range(6):
